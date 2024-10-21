@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PinkTube",
+  "version": "0.1",
+  "description": "Changes the background of YouTube to pink.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["code.js"]
+    }
+  ]
+}
